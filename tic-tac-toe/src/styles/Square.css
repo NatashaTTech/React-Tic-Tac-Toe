@@ -1,0 +1,33 @@
+.square {
+    background: black;
+    border: 1px solid #3675ff;
+    float: left;
+    font-size: 64px;
+    height: 100px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 100px;
+    color: white;
+    transition: all 100ms ease-in-out;
+    cursor: url(../img/X.png), pointer;
+}
+.square.o {
+    cursor: url(../img/O.png), pointer;
+}
+.square:hover {
+    box-shadow: inset 0 0 10px 3px #3675ff;
+}
+.square.disabled {
+    cursor: auto;
+}
+.square.disabled:hover {
+    box-shadow: none;
+}
+.square:focus {
+    outline: none;
+}
+.kbd-navigation .square:focus {
+    background: #ddd;
+}

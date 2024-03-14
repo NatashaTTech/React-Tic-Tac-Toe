@@ -1,0 +1,57 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('../img/lake.jpeg');
+    background-size: 100% 100%;   
+    z-index: -1;
+}
+.background-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; 
+    width: 100%;
+    background: url('../img/lake-mask.png');
+    background-size: 100% 100%;   
+    filter: url('#turbulence');
+    z-index: -1;
+}
+.game {
+	width: 500px;
+    margin: 0 auto;
+    margin-top: -80px;
+	display: flex;
+	flex-direction: row;
+    background-color: #2b2b2b;
+    border-radius: 3%;
+    z-index: 3;
+}
+.game-shadow {
+    height: 50px;
+    background-color:#0c141eb3;
+    z-index: -1;
+    transform: matrix(1, 0, 0, 1, 0, 145);
+    filter: blur(14px);
+}
+.game-board {
+    margin: 25px auto;
+}
+.game-title {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+	margin-bottom: 32px;
+}
+.game-info {
+    margin-top: 28px;
+    color: white;
+    font-size: 20px;
+}
+.game-status {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
